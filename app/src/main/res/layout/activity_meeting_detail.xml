@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="酒店预订"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_hotel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cb_hotel"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="36dp" />
+
+    <CheckBox
+        android:id="@+id/cb_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="39dp"
+        android:text="完成"
+        app:layout_constraintStart_toEndOf="@+id/tv_hotel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_people_num"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="24dp" />
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="场地预订"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_place"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cb_place"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="36dp" />
+
+    <CheckBox
+        android:id="@+id/cb_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginStart="24dp"
+        android:text="完成"
+        app:layout_constraintBottom_toTopOf="@+id/tv_place_room_num"
+        app:layout_constraintStart_toEndOf="@+id/tv_place"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="24dp" />
+
+    <TextView
+        android:id="@+id/tv_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="目前参会人数："
+        app:layout_constraintBottom_toBottomOf="@+id/tv_people_num"
+        app:layout_constraintEnd_toEndOf="@+id/tv_hotel"
+        app:layout_constraintStart_toStartOf="@+id/tv_hotel"
+        app:layout_constraintTop_toTopOf="@+id/tv_people_num"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tv_people_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="51dp"
+        android:text="暂无！"
+        app:layout_constraintStart_toEndOf="@+id/tv_people"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tv_hotel_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="房间个数："
+        app:layout_constraintBottom_toBottomOf="@+id/tv_hotel_room_num"
+        app:layout_constraintEnd_toEndOf="@+id/tv_hotel"
+        app:layout_constraintStart_toStartOf="@+id/tv_hotel"
+        app:layout_constraintTop_toTopOf="@+id/tv_hotel_room_num"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_hotel_room_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:text="暂无！"
+        app:layout_constraintStart_toEndOf="@+id/tv_hotel_room"
+        app:layout_constraintTop_toBottomOf="@+id/cb_hotel"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="24dp" />
+
+    <TextView
+        android:id="@+id/tv_hotel_galleryful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="容纳人数："
+        app:layout_constraintBottom_toBottomOf="@+id/tv_hotel_galleryful_num"
+        app:layout_constraintEnd_toEndOf="@+id/tv_hotel_room"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_hotel_room"
+        app:layout_constraintTop_toTopOf="@+id/tv_hotel_galleryful_num"
+        tools:ignore="MissingConstraints"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/tv_hotel_galleryful_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="暂无！"
+        app:layout_constraintStart_toStartOf="@+id/tv_hotel_room_num"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel_room_num"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_place_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="会议室个数："
+        app:layout_constraintBottom_toBottomOf="@+id/tv_place_room_num"
+        app:layout_constraintEnd_toEndOf="@+id/tv_place"
+        app:layout_constraintStart_toStartOf="@+id/tv_place"
+        app:layout_constraintTop_toTopOf="@+id/tv_place_room_num"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tv_place_room_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="13dp"
+        android:text="暂无！"
+        app:layout_constraintBottom_toTopOf="@+id/tv_place_galleryful_num"
+        app:layout_constraintStart_toEndOf="@+id/tv_place_room"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="13dp" />
+
+    <TextView
+        android:id="@+id/tv_place_galleryful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="容纳人数："
+        app:layout_constraintBottom_toBottomOf="@+id/tv_place_galleryful_num"
+        app:layout_constraintEnd_toEndOf="@+id/tv_place_room"
+        app:layout_constraintStart_toStartOf="@+id/tv_place_room"
+        app:layout_constraintTop_toTopOf="@+id/tv_place_galleryful_num"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_place_galleryful_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="暂无！"
+        app:layout_constraintBottom_toTopOf="@+id/tv_place_address_detail"
+        app:layout_constraintStart_toStartOf="@+id/tv_place_address_detail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_place_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="地址:"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_place_address_detail"
+        app:layout_constraintEnd_toEndOf="@+id/tv_place_galleryful"
+        app:layout_constraintStart_toStartOf="@+id/tv_place_galleryful"
+        app:layout_constraintTop_toTopOf="@+id/tv_place_address_detail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_place_address_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_marginStart="20dp"
+        android:text="暂无！"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_place_galleryful"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="20dp" />
+</android.support.constraint.ConstraintLayout>

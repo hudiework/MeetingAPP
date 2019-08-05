@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical" >
+
+    <Button
+		android:id="@+id/btn_work"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="全部工作人员" />
+
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="全部参会人员" />
+    
+    <Button
+        android:id="@+id/btn_all"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="参会人员与工作人员" />
+
+</LinearLayout>

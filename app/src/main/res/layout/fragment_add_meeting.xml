@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="创建会议"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会议标题"
+            app:layout_constraintBottom_toBottomOf="@+id/et_eventName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_eventName" />
+
+        <EditText
+            android:id="@+id/et_eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_eventName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_eventCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会议费用"
+            app:layout_constraintBottom_toBottomOf="@+id/et_meetingCost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_eventPeople" />
+
+        <EditText
+            android:id="@+id/et_meetingCost"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="number|numberDecimal"
+            android:maxLines="10"
+            app:layout_constraintEnd_toEndOf="@+id/et_eventPeople"
+            app:layout_constraintStart_toStartOf="@+id/et_eventPeople"
+            app:layout_constraintTop_toBottomOf="@+id/et_eventPeople" />
+
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="100dp"
+            android:layout_height="14dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_eventTime"
+            app:layout_constraintEnd_toEndOf="@+id/btn_overTime"
+            app:layout_constraintStart_toStartOf="@+id/btn_overTime"
+            app:layout_constraintTop_toTopOf="@+id/tv_eventTime" />
+
+        <Button
+            android:id="@+id/btn_ChooseStart"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:padding="0dp"
+            android:text="选择时间"
+            android:textColor="#f18d35"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_overTime"
+            app:layout_constraintStart_toStartOf="@+id/et_eventName"
+            app:layout_constraintTop_toTopOf="@+id/btn_overTime" />
+        <!--android:background="@drawable/radius_shape"-->
+
+        <TextView
+            android:id="@+id/tv_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="举办时间"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_eventTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_ChooseStart" />
+
+        <TextView
+            android:id="@+id/tv_eventTime"
+            android:layout_width="84dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+            app:layout_constraintStart_toStartOf="@+id/btn_ChooseStart"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ChooseStart" />
+
+        <Button
+            android:id="@+id/btn_overTime"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:padding="0dp"
+            android:text="选择时间"
+            android:textColor="#f18d35"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/et_eventName"
+            app:layout_constraintTop_toBottomOf="@+id/et_eventName" />
+        <!-- android:background="@drawable/radius_shape"-->
+
+        <TextView
+            android:id="@+id/tv_eventPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="会议地点"
+            app:layout_constraintBottom_toBottomOf="@+id/et_eventPlace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_eventPlace" />
+
+        <EditText
+            android:id="@+id/et_eventPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/et_eventName"
+            app:layout_constraintStart_toStartOf="@+id/et_eventName"
+            app:layout_constraintTop_toBottomOf="@+id/et_eventName" />
+
+
+        <TextView
+            android:id="@+id/tv_eventGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请嘉宾"
+            app:layout_constraintBottom_toBottomOf="@+id/et_eventGuest"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_eventGuest" />
+
+        <EditText
+            android:id="@+id/et_eventGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/et_eventPlace"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/et_eventPlace"
+            app:layout_constraintTop_toBottomOf="@+id/et_eventPlace" />
+
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:text="取消"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_eventPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参会对象"
+            app:layout_constraintBottom_toBottomOf="@+id/et_eventPeople"
+            app:layout_constraintTop_toTopOf="@+id/et_eventPeople"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <EditText
+            android:id="@+id/et_eventContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/et_eventPlace"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_eventPlace"
+            app:layout_constraintTop_toBottomOf="@+id/et_meetingCost" />
+
+        <TextView
+            android:id="@+id/tv_eventContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="会议简介"
+            app:layout_constraintBottom_toBottomOf="@+id/et_eventContent"
+            app:layout_constraintTop_toTopOf="@+id/et_eventContent"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <EditText
+            android:id="@+id/et_eventPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/et_eventPlace"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_eventPlace"
+            app:layout_constraintTop_toBottomOf="@+id/et_eventGuest" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:text="取消"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_add_next"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button"
+            android:text="下一步"
+            android:textColor="#eee"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        <!-- -->
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="150dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-104dp" />
+</android.support.constraint.ConstraintLayout>

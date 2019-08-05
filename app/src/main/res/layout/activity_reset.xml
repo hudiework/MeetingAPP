@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#ddd"
+    tools:context="com.example.dell.demo2.loginandregister.activity.ResetActivity"
+    tools:layout_editor_absoluteY="81dp">
+    <!--android:background="@mipmap/back_reset"-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="重置密码"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_resetphone"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="176dp"
+            android:layout_weight="1"
+            android:hint="请输入常用手机号码"
+            android:inputType="phone"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/et_verify_code2"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:hint="6位验证码"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_send2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/et_resetphone"
+            app:layout_constraintTop_toBottomOf="@+id/et_resetphone" />
+
+        <Button
+            android:id="@+id/btn_send2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/radius_shape"
+            android:text="发送验证码"
+            android:textColor="#f18d35"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_verify_code2"
+            app:layout_constraintEnd_toEndOf="@+id/et_resetphone"
+            app:layout_constraintTop_toTopOf="@+id/et_verify_code2"
+            app:layout_constraintVertical_bias="0.571" />
+
+
+        <EditText
+            android:id="@+id/et_newpwd"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/et_resetphone"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/et_resetphone"
+            app:layout_constraintTop_toBottomOf="@+id/et_verify_code2" />
+
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码为6-20位数字字母组合，可含下划线"
+            android:textSize="8sp"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_newpwd" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button"
+            android:text="确认重置"
+            android:textColor="#eee"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/et_resetphone"
+            app:layout_constraintStart_toStartOf="@+id/et_resetphone"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        <!-- android:textColor="#077fdc"-->
+
+
+        <Button
+            android:id="@+id/btn_reset1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:text="登  录"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#555"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.736" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="|"
+            android:textColor="#555"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_reset" />
+
+        <Button
+            android:id="@+id/btn_reset2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="24dp"
+            android:background="@null"
+            android:text="注册账号"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#555"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.046" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

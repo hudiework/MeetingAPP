@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.demo2.loginsucce_meetingpart.AddMeetingFragment">
+
+    <TextView
+        android:id="@+id/tvCreateMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="创建会议"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tv_eventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_eventName"
+        android:layout_alignBottom="@+id/et_eventName"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/et_eventName"
+        android:layout_toStartOf="@+id/et_eventName"
+        android:text="会议标题"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_eventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvCreateMeeting"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:ems="10"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/tv_eventContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etMeetingCost"
+        android:layout_alignBottom="@+id/etMeetingCost"
+        android:layout_alignLeft="@+id/tv_eventName"
+        android:layout_alignStart="@+id/tv_eventName"
+        android:textSize="16sp"
+        android:text="会议内容" />
+
+    <EditText
+        android:id="@+id/etMeetingCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_eventName"
+        android:layout_alignLeft="@+id/et_eventName"
+        android:layout_alignRight="@+id/et_eventName"
+        android:layout_alignStart="@+id/et_eventName"
+        android:layout_below="@+id/et_eventName"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/tv_eventAgenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_eventAgenda"
+        android:layout_alignBottom="@+id/btn_eventAgenda"
+        android:layout_alignLeft="@+id/tv_eventContent"
+        android:layout_alignStart="@+id/tv_eventContent"
+        android:textSize="16sp"
+        android:text="会议议程" />
+
+    <Button
+        android:id="@+id/btn_eventAgenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etMeetingCost"
+        android:layout_alignStart="@+id/etMeetingCost"
+        android:layout_below="@+id/etMeetingCost"
+        android:text="上传会议议程" />
+
+    <TextView
+        android:id="@+id/tv_eventStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_StartTime"
+        android:layout_alignBottom="@+id/tv_StartTime"
+        android:layout_alignLeft="@+id/tv_eventAgenda"
+        android:layout_alignStart="@+id/tv_eventAgenda"
+        android:text="举办时间" />
+
+    <TextView
+        android:id="@+id/tv_StartTime"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_overTime"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_ChooseStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etMeetingCost"
+        android:layout_alignRight="@+id/etMeetingCost"
+        android:layout_below="@+id/tv_eventAgenda"
+        android:layout_weight="1"
+        android:text="选择时间" />
+
+
+    <TextView
+        android:id="@+id/tv_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_overTime"
+        android:layout_alignBottom="@+id/btn_overTime"
+        android:layout_alignLeft="@+id/tv_eventStart"
+        android:layout_alignStart="@+id/tv_eventStart"
+        android:text="截止时间" />
+
+  <TextView
+      android:id="@+id/tv_overTime"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/tv_deadline"
+      android:layout_alignBottom="@+id/tv_deadline"
+      android:layout_alignLeft="@+id/tv_StartTime"
+      android:layout_alignStart="@+id/tv_StartTime"
+      android:layout_weight="1" />
+
+  <Button
+      android:id="@+id/btn_overTime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/btn_ChooseStart"
+      android:layout_alignStart="@+id/btn_ChooseStart"
+      android:layout_below="@+id/btn_ChooseStart"
+      android:layout_weight="1"
+      android:text="选择时间" />
+
+
+   <TextView
+        android:id="@+id/tv_addEventPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_eventPlace"
+        android:layout_alignBottom="@+id/et_eventPlace"
+        android:layout_alignLeft="@+id/tv_deadline"
+        android:layout_alignStart="@+id/tv_deadline"
+        android:textSize="16sp"
+        android:text="会议地点" />
+
+    <EditText
+        android:id="@+id/et_eventPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_overTime"
+        android:layout_alignRight="@+id/btn_overTime"
+        android:layout_below="@+id/btn_overTime"
+        android:ems="10"
+        android:inputType="text" />
+
+
+ <TextView
+       android:id="@+id/tv_eventGuest"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/et_eventPeople"
+       android:layout_alignBottom="@+id/et_eventPeople"
+       android:layout_alignLeft="@+id/tv_addEventPlace"
+       android:layout_alignStart="@+id/tv_addEventPlace"
+     android:textSize="16sp"
+       android:text="邀请对象" />
+
+    <EditText
+        android:id="@+id/et_eventPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_eventPlace"
+        android:layout_alignLeft="@+id/et_eventPlace"
+        android:layout_alignRight="@+id/et_eventPlace"
+        android:layout_alignStart="@+id/et_eventPlace"
+        android:layout_below="@+id/et_eventPlace"
+        android:inputType="textMultiLine" />
+
+
+    <TextView
+        android:id="@+id/tv_eventGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_eventGuide"
+        android:layout_alignBottom="@+id/btn_eventGuide"
+        android:layout_alignLeft="@+id/tv_eventGuest"
+        android:layout_alignStart="@+id/tv_eventGuest"
+        android:text="参会指南"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_eventGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_overTime"
+        android:layout_alignStart="@+id/tv_overTime"
+        android:layout_below="@+id/et_eventPeople"
+        android:layout_marginTop="10dp"
+        android:text="上传参会指南" />
+
+
+   <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_eventGuide"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tv_eventGuide"
+        android:layout_marginBottom="19dp"
+        android:text="取消" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/btn_cancel"
+        android:layout_alignBottom="@+id/btn_cancel"
+        android:layout_toEndOf="@+id/btn_eventGuide"
+        android:layout_toRightOf="@+id/btn_eventGuide"
+        android:text="下一步" />
+
+    <TextView
+        android:id="@+id/tv_honner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_meetingSpecial"
+        android:layout_alignBottom="@+id/et_meetingSpecial"
+        android:layout_alignLeft="@+id/tv_eventGuide"
+        android:layout_alignStart="@+id/tv_eventGuide"
+        android:textSize="16sp"
+        android:text="特邀嘉宾" />
+
+    <EditText
+        android:id="@+id/et_meetingSpecial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_eventPeople"
+        android:layout_alignStart="@+id/et_eventPeople"
+        android:layout_below="@+id/btn_eventGuide"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_meetingcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_meetingcost"
+        android:layout_alignBottom="@+id/et_meetingcost"
+        android:layout_alignLeft="@+id/tv_honner"
+        android:layout_alignStart="@+id/tv_honner"
+        android:textSize="16sp"
+        android:text="会议费用" />
+
+    <EditText
+        android:id="@+id/et_meetingcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_meetingSpecial"
+        android:layout_alignStart="@+id/et_meetingSpecial"
+        android:layout_below="@+id/et_meetingSpecial"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+</RelativeLayout>

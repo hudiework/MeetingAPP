@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:context="com.example.dell.demo2.login_main.fakeMainActivity">
+
+    <Button
+        android:id="@+id/btn_fake_worker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="主办方" />
+
+    <Button
+        android:id="@+id/btn_fake_participant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_fake_worker"
+        android:layout_alignStart="@+id/btn_fake_worker"
+        android:layout_below="@+id/btn_fake_worker"
+        android:layout_marginTop="106dp"
+        android:text="参会方" />
+
+    <Button
+        android:id="@+id/btn_fake_workerTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_fake_participant"
+        android:layout_alignStart="@+id/btn_fake_participant"
+        android:layout_below="@+id/btn_fake_participant"
+        android:layout_marginTop="106dp"
+        android:text="普通工作人员（测试）" />
+</RelativeLayout>

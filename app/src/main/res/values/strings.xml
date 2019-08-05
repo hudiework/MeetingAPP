@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Demo2</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="chooser_title">Lorem ipsum</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_reset">ResetActivity</string>
+    <string name="title_activity_download">DownloadActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_qrcode">QRcodeActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_three">ThreeActivity</string>
+    <string name="title_activity_participant_main">ParticipantMainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_test_ui">TestUIActivity</string>
+</resources>

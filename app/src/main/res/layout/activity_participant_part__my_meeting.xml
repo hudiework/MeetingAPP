@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.demo2.loginsucce_participantpart.ParticipantPart_MyMeetingActivity">
+    <TextView
+        android:id="@+id/tv_participant_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无会议！"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="65dp"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/lv_ongoing_meeting"
+        android:layout_width="368dp"
+        android:layout_height="411dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="92dp"
+        tools:ignore="MissingConstraints" />
+    <ListView
+        android:id="@+id/lv_over_meeting"
+        android:layout_width="368dp"
+        android:layout_height="411dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="92dp"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>

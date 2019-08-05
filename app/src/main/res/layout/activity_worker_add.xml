@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.demo2.create_meeting.meeting_manage_activity.WorkerAddActivity">
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="44dp"
+        android:layout_toLeftOf="@+id/et_phone"
+        android:layout_toStartOf="@+id/et_phone"
+        android:text="手机号"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_phone"
+        android:layout_alignBottom="@+id/tv_phone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_phone"
+        android:layout_alignStart="@+id/tv_phone"
+        android:layout_below="@+id/et_phone"
+        android:layout_marginTop="17dp"
+        android:text="姓名"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@+id/tv_name"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_alignLeft="@+id/et_phone"
+        android:layout_alignStart="@+id/et_phone"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignStart="@+id/tv_name"
+        android:layout_below="@+id/et_name"
+        android:layout_marginTop="27dp"
+        android:text="公司"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <EditText
+        android:id="@+id/et_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_company"
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_alignStart="@+id/et_name"
+        android:ems="10"
+        android:hint="选填"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_company"
+        android:layout_alignStart="@+id/tv_company"
+        android:layout_below="@+id/tv_company"
+        android:layout_marginTop="24dp"
+        android:text="请为此工作人员分配任务："
+        android:textSize="18sp"
+        android:id="@+id/textView24" />
+
+
+    <Button
+        android:id="@+id/btn_choose_hotel_reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="35dp"
+        android:background="#8E8E8E"
+        android:tag="1"
+        android:text="酒店预订"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btn_choose_place_reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_choose_hotel_reserve"
+        android:layout_alignBottom="@+id/btn_choose_hotel_reserve"
+        android:layout_alignEnd="@+id/textView24"
+        android:layout_alignRight="@+id/textView24"
+        android:background="#8E8E8E"
+        android:tag="2"
+        android:text="场地预订"
+        android:textColor="#fff"
+        tools:ignore="InvalidId" />
+
+
+    <Button
+        android:id="@+id/btn_choose_car_rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_choose_hotel_reserve"
+        android:layout_alignStart="@+id/btn_choose_hotel_reserve"
+        android:layout_below="@+id/btn_choose_hotel_reserve"
+        android:layout_marginTop="23dp"
+        android:background="#8E8E8E"
+        android:tag="3"
+        android:text="车辆租赁"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btn_choose_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/btn_choose_car_rent"
+        android:layout_alignBottom="@+id/btn_choose_car_rent"
+        android:layout_alignLeft="@+id/btn_choose_place_reserve"
+        android:layout_alignStart="@+id/btn_choose_place_reserve"
+        android:background="#8E8E8E"
+        android:tag="4"
+        android:text="扫码签到"
+        android:textColor="#fff" />
+
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_choose_car_rent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/tv_company"
+        android:layout_toRightOf="@+id/tv_company"
+        android:text="通知TA" />-->
+
+</RelativeLayout>

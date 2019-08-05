@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_worker_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="赵**" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+
+    <Button
+        android:id="@+id/btn_hotel_reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="1"
+        android:background="#8E8E8E"
+        android:textColor="#fff"
+        android:text="酒店预订" />
+
+    <Button
+        android:id="@+id/btn_place_reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8E8E8E"
+        android:tag="2"
+        android:textColor="#fff"
+        android:text="场地预订"
+        tools:ignore="InvalidId" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        >
+    <Button
+        android:id="@+id/btn_car_rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="#8E8E8E"
+        android:tag="3"
+        android:text="车辆租赁" />
+
+    <Button
+        android:id="@+id/btn_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8E8E8E"
+        android:textColor="#fff"
+        android:tag="4"
+        android:text="扫码签到" />
+    </LinearLayout>
+
+</LinearLayout>

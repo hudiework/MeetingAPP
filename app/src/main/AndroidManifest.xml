@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.demo2">
+
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    >
+
+    <!-- 网络通信权限，允许联网 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 上传下载允许读写 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 摄像头权限 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".loginandregister.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".pollingservice.PollingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".listview.PartDetailActivity" />
+        <activity android:name=".listview.PartCommentActivity" />
+        <activity android:name=".listview.CommentDetailActivity" />
+        <activity android:name=".listview.SecretaryCommentActivity" />
+        <activity android:name=".listview.OrderRatingActivity" />
+        <activity android:name=".listview.MyDetailActivity" />
+        <activity android:name=".listview.WorkerLookActivity" />
+        <activity android:name=".listview.WorkerSeeActivity" />
+        <activity android:name=".listview.CheckActivity" />
+        <activity android:name=".listview.SecretaryCheckActivity" />
+        <activity android:name=".listview.WorkerSendActivity" />
+        <activity android:name=".listview.SearchMeetingActivity" />
+        <activity android:name=".listview.WorkingActivity" />
+        <activity android:name=".listview.AllPeopleActivity" />
+        <activity android:name=".listview.CallSuperActivity" />
+        <activity android:name=".listview.SecretaryWorkActivity" />
+        <activity android:name=".listview.CallSecretaryActivity" />
+        <activity android:name=".listview.MeetingPartActivity" />
+        <activity android:name=".pollingservice.MessageActivity" />
+        <activity android:name=".supervisor.SupervisorActivity" />
+        <activity android:name=".supervisor.ChangeLimitActivity" />
+        <activity android:name=".supervisor.MeetingDetailActivity" />
+        <activity android:name=".worker.WorkerActivity" />
+        <activity android:name=".listview.DetailActivity" />
+        <activity android:name=".listview.MainActivity" />
+        <activity android:name=".listview.MyMessageActivity" />
+        <activity android:name=".listview.SendActivity" />
+        <activity android:name=".listview.WriteActivity" />
+        <!-- <activity android:name=".loginsucce_meetingpart.MeetingPart_MainActivity" /> -->
+        <activity android:name=".loginsucce_meetingpart.MeetingPart_MyMeetingActivity" />
+        <activity android:name=".loginsucce_participantpart.ParticipantPart_MyMeetingActivity" />
+        <activity android:name=".loginsucce_participantpart.ParticipantPart_MeetingDetailActivity" />
+        <activity android:name=".create_meeting.meeting_manage_activity.AddChildMeetingActivity" />
+        <activity android:name=".create_meeting.meeting_manage_activity.ChildMeetListActivity" />
+        <activity android:name=".create_meeting.meeting_manage_activity.LeaderAddActivity" />
+        <activity android:name=".create_meeting.meeting_manage_activity.CreateMeetingMainActivity" />
+        <activity android:name=".create_meeting.meeting_manage_activity.MeetingAddActivity" />
+        <activity android:name=".create_meeting.meeting_manage_activity.MeetingDetailActivity" />
+        <activity android:name=".create_meeting.meeting_manage_activity.RolesAssignmentActivity" />
+        <activity android:name=".create_meeting.meeting_manage_activity.SecretaryAddActivity" />
+        <activity android:name=".create_meeting.meeting_manage_activity.WorkerAddActivity" />
+        <activity android:name=".download.FileListActivity" />
+        <activity android:name=".download.LoadFileMainActivity" />
+        <activity android:name=".secretary.SecretaryMainActivity" />
+        <activity android:name=".loginsucce_meetingpart.MeetingPart_MainActivity" />
+        <!--<activity android:name=".loginandregister.activity.LoginActivity" />-->
+        <activity android:name=".loginandregister.activity.RegisterActivity" />
+        <activity android:name=".loginandregister.activity.ResetActivity" />
+        <activity
+            android:name=".QRcode.QRcodeActivity"
+            android:label="@string/title_activity_qrcode" />
+        <activity
+            android:name=".QRcode.BaseActivity"
+            android:label="@string/title_activity_base" />
+        <activity
+            android:name=".QRcode.SecondActivity"
+            android:label="@string/title_activity_second" />
+        <activity
+            android:name=".QRcode.ThreeActivity"
+            android:label="@string/title_activity_three" />
+        <activity android:name=".loginsucce_participantpart.ParticipantMyFilesActivity" />
+        <activity android:name=".loginsucce_participantpart.PayAndBill.ParticipantDetialActivity" />
+        <activity android:name=".loginsucce_participantpart.PdfActivity" />
+        <activity android:name=".loginsucce_participantpart.PayAndBill.CreateBillMainActivity" />
+        <activity android:name=".worker.HotelListActivity" />
+        <activity android:name=".worker.ScheduleHotelActivity" />
+        <activity android:name=".worker.ScheduleHotelDetailActivity" />
+        <activity
+            android:name=".loginsucce_participantpart.ParticipantMainActivity"
+            android:label="@string/title_activity_participant_main" />
+    </application>
+
+</manifest>

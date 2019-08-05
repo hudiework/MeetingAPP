@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:context="com.example.dell.demo2.loginsucce_participantpart.PayAndBill.ParticipantDetialActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/et_participantTel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_participantName" />
+
+        <EditText
+            android:id="@+id/et_participantName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="必填"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_eventName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_participantTel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_participantTel" />
+
+        <EditText
+            android:id="@+id/et_participantTel"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="必填"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_participantName" />
+
+
+        <TextView
+            android:id="@+id/tv_eventName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单位"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/et_participantPosition"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_participantCompany" />
+
+        <EditText
+            android:id="@+id/et_participantCompany"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_participantTel" />
+
+
+        <TextView
+            android:id="@+id/tv_eventName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="职位"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_participantPosition"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_participantPosition" />
+
+        <EditText
+            android:id="@+id/et_participantPosition"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="选填"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_participantCompany" />
+
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报名的会议子项"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_childMeeting"
+            app:layout_constraintTop_toTopOf="@+id/sp_childMeeting" />
+
+        <Spinner
+            android:id="@+id/sp_childMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/et_participantPosition"
+            tools:layout_editor_absoluteX="122dp"></Spinner>
+
+        <TextView
+            android:id="@+id/tv_childMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商务讲座"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_childMeeting"
+            app:layout_constraintTop_toTopOf="@+id/sp_childMeeting"
+            tools:layout_editor_absoluteX="170dp" />
+
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="住宿方式："
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_demaind"
+            app:layout_constraintTop_toTopOf="@+id/sp_demaind" />
+
+        <Spinner
+            android:id="@+id/sp_demaind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/sp_childMeeting"
+            tools:layout_editor_absoluteX="80dp"></Spinner>
+
+
+        <TextView
+            android:id="@+id/tv_demaind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不住宿"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_demaind"
+            app:layout_constraintTop_toTopOf="@+id/sp_demaind"
+            tools:layout_editor_absoluteX="128dp" />
+
+
+        <Button
+            android:id="@+id/btn_signCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="#444"
+            app:layout_constraintEnd_toStartOf="@+id/btn_signUp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="452dp" />
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="报名"
+            android:textColor="#eee"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/btn_create_bill"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生成发票"
+            android:textColor="#f18d35"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_signUp"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="452dp" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

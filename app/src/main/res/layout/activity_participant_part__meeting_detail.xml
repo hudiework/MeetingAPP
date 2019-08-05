@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.demo2.loginsucce_participantpart.ParticipantPart_MeetingDetailActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="会议名:" />
+
+        <TextView
+            android:id="@+id/tv_participant_meetingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="主持人:" />
+
+        <TextView
+            android:id="@+id/tv_participant_meetingCompere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="会议内容:" />
+
+        <TextView
+            android:id="@+id/tv_participant_meetingContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始时间:" />
+
+        <TextView
+            android:id="@+id/tv_participant_meetingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="会议地点:" />
+
+        <TextView
+            android:id="@+id/tv_participant_meetingPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="会议议程:" />
+
+        <TextView
+            android:id="@+id/tv_participant_meetingAgenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="参会指南:" />
+
+        <TextView
+            android:id="@+id/tv_participant_meetingGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="结束时间:" />
+
+        <TextView
+            android:id="@+id/tv_participant_meetingOverDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_participant_childMeeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看会议子项" />
+    <LinearLayout
+        android:id="@+id/ll_childMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv_childMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <TextView
+            android:id="@+id/tv_participant_childmeeting_defalt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无会议！"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_participant_myChildMeeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我参加的子项" />
+    <LinearLayout
+        android:id="@+id/ll_myChildMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv_myChildMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <TextView
+            android:id="@+id/tv_participant_myChildmeeting_defalt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无会议！"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_participant_meetingDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看会议资料" />
+
+    <Button
+        android:id="@+id/btn_participant_meetingTalk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="坐席解答" />
+
+    <Button
+        android:id="@+id/btn_gocomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进行评论" />
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看评论" />
+
+</LinearLayout>
